@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.img {
+    height: 100vh;
+    width: 1180px;
+    background-image: url("illustration.png");
+}
+
+.container {
+    height: 100vh;
+    width: 890px;
+
+    position: relative;
+    left: -0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb {
+    width: 420px;
+    height: 505px;
+}
+
+.mb img {
+    position: relative;
+    top: -80px;
+}
+
+h2 {
+    position: relative;
+    top: -70px;
+    font-size: 35px;
+}
+
+p {
+    position: relative;
+    top: -65px;
+    font-weight: 500;
+}
+
+.CwG {
+    width: 420px;
+    height: 49px;
+    border-radius: 5px;
+    position: relative;
+    top: -20px;
+    border: 1px solid #A1A1A1;
+}
+
+.CwG:hover {
+    cursor: pointer;
+}
+
+.CwG img {
+    position: relative;
+    top: 10px;
+    left: 105px;
+}
+
+.CwG p {
+    position: relative;
+    top: -19px;
+    left: 140px;
+}
+
+.CwG span {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    color: #4b4545;
+}
+
+/* ***** */
+.f {
+    width: 422px;
+    height: 200px;
+    position: relative;
+    top: 60px;
+}
+
+.rf {
+    width: 422px;
+    height: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.rf input {
+    width: 15px;
+    height: 20px;
+    border: none;
+    padding-left: 13px;
+
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.rf label {
+    position: relative;
+    top: 2px;
+    color: black;
+    left: 6px;
+}
+
+.rf a {
+    float: right;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+    font-weight: 300;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #A1A1A1;
+    padding-left: 5px;
+}
+
+label {
+    color: #fff;
+}
+
+.button {
+    width: 422px;
+    height: 50px;
+    background-color: #7F265B;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 5px;
+}

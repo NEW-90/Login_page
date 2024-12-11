@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Disign</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="img"></div>
+
+    <div class="container">
+        
+        
+        <div class="mb">
+            <img src="Group 1686550876.png" alt="ERROR">
+            <h2>Login to your Account</h2>
+            <p>See what is going on with your business</p>
+
+            <div class="CwG">
+                <img src="image 2.svg" alt="ERROR">
+                <p>Continue with Google</p>
+
+                <span>------------- or Sign in with Email ------------- </span>
+            </div>
+
+            <div class="f">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" placeholder="mail@abc.com">
+
+                <br>
+
+                <label for="email">Password</label>
+                <br>
+                <input type="email" id="Password" placeholder="********">
+
+                <div class="rf">
+                    <input type="checkbox" name="" id=""><label for="d"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button onclick="signOut()" class="button">Login</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+           function start() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init({
+          client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+        });
+      });
+    }
+
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      var id_token = googleUser.getAuthResponse().id_token;
+
+      console.log("Name: " + profile.getName());
+      console.log("Email: " + profile.getEmail());
+      console.log("ID Token: " + id_token);
+    }
+
+    function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    }
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
