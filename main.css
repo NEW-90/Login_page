@@ -16,7 +16,7 @@ body {
 .img {
     height: 100vh;
     width: 1180px;
-    background-image: url("illustration.png");
+    background-image: url("img/main.png");
 }
 
 .container {
