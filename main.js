@@ -1,3 +1,6 @@
+// не работают
+
+
 function onSignIn(googleUser) {
     // Получаем токен и информацию о пользователе
     var profile = googleUser.getBasicProfile();
